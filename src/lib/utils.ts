@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatPrice(
-  price: numebr | string,
+  price: number | string,
   options: {
     currency?: "USD" | "EUR" | "GBP" | "BDT";
     notation?: Intl.NumberFormatOptions["notation"];
