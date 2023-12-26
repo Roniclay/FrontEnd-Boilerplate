@@ -38,10 +38,10 @@ const start = async () => {
 
   // garante que o servidor Express seja iniciado apenas quando o Next.js estiver pronto para lidar com as solicitações.
   nextApp.prepare().then(() => {
-    //payload.logger.info('Next.js started')
+    payload.logger.info('Next.js started')
 
     app.listen(PORT, async () => {
-      //payload.logger.info(`Next.js App URL: ${process.env.NEXT_PUBLIC_SERVER_URL}`)
+      payload.logger.info(`Next.js App URL: ${process.env.NEXT_PUBLIC_SERVER_URL}`)
     });
   });
 };
