@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -49,7 +51,7 @@ const ImageSlider = ({ urls }: ImageSliderProps) => {
             "hover:bg-primary-300 text-primary-800 opacity-100":
               !slideConfig.isEnd,
           })}
-          aria-label='next image'
+          aria-label="next image"
         >
           <ChevronRight className="h-4 w-4 text-zinc-700" />{" "}
         </button>
@@ -63,19 +65,18 @@ const ImageSlider = ({ urls }: ImageSliderProps) => {
             "hover:bg-primary-300 text-primary-800 opacity-100":
               !slideConfig.isBeginning,
           })}
-          aria-label='previous image'
+          aria-label="previous image"
         >
           <ChevronLeft className="h-4 w-4 text-zinc-700" />{" "}
         </button>
-        
       </div>
 
       <Swiper
-      pagination={{
-        renderBullet: (_, className) => {
-          return `<span class="rounded-full transition ${className}"></span>`
-        }
-      }}
+        pagination={{
+          renderBullet: (_, className) => {
+            return `<span class="rounded-full transition ${className}"></span>`;
+          },
+        }}
         onSwiper={(swiper) => setSwiper(swiper)}
         spaceBetween={50}
         modules={[Pagination]}
