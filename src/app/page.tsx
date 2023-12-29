@@ -6,7 +6,7 @@ import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
 
 const perks = [
   {
-    name: "Instant Devlivery",
+    name: "Instant Delivery",
     Icon: ArrowDownToLine,
     description:
       "Get your assets delivered to your email in seconds and downoad them right away ",
