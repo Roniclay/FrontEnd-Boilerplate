@@ -29,7 +29,7 @@ export default function RootLayout({
             <div className="flex-grow flex-1">{children}</div>
           </Providers>
         </main>
-        <Toaster position="top-center" richColors/>
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );
